@@ -161,25 +161,25 @@ def apply_ADASYN(X, y):
 
 def apply_clasification(X_train, X_test, y_train, y_test, labels, with_statistics = True, with_confusion_matrix = True):
 
-    # y_pred = apply_GaussianNB(X_train, y_train, X_test)
-    # if with_statistics: show_statistics(y_test, y_pred, "Naive Bayes Classifier")
-    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Naive Bayes Classifier", labels)
-    #
-    # y_pred = apply_MLPClassifier(X_train, y_train, X_test)
-    # if with_statistics: show_statistics(y_test, y_pred, "MLP Classifier")
-    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "MLP Classifier", labels)
-    #
-    # y_pred = apply_KNeighborsClassifier(X_train, y_train, X_test)
-    # if with_statistics: show_statistics(y_test, y_pred, "KNeighbors Classifier")
-    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "KNeighbors Classifier", labels)
-    #
-    # y_pred = apply_XGBClassifier(X_train, y_train, X_test)
-    # if with_statistics: show_statistics(y_test, y_pred, "XGBoost Classifier")
-    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "XGBoost Classifier", labels)
-    #
-    # y_pred = apply_RandomForestClassifier(X_train, y_train, X_test)
-    # if with_statistics: show_statistics(y_test, y_pred, "Random Forest Classifier")
-    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Random Forest Classifier", labels)
+    y_pred = apply_GaussianNB(X_train, y_train, X_test)
+    if with_statistics: show_statistics(y_test, y_pred, "Naive Bayes Classifier")
+    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Naive Bayes Classifier", labels)
+
+    y_pred = apply_MLPClassifier(X_train, y_train, X_test)
+    if with_statistics: show_statistics(y_test, y_pred, "MLP Classifier")
+    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "MLP Classifier", labels)
+
+    y_pred = apply_KNeighborsClassifier(X_train, y_train, X_test)
+    if with_statistics: show_statistics(y_test, y_pred, "KNeighbors Classifier")
+    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "KNeighbors Classifier", labels)
+
+    y_pred = apply_XGBClassifier(X_train, y_train, X_test)
+    if with_statistics: show_statistics(y_test, y_pred, "XGBoost Classifier")
+    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "XGBoost Classifier", labels)
+
+    y_pred = apply_RandomForestClassifier(X_train, y_train, X_test)
+    if with_statistics: show_statistics(y_test, y_pred, "Random Forest Classifier")
+    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Random Forest Classifier", labels)
 
     y_pred = apply_customRandomForestClassifier(X_train, y_train, X_test)
     if with_statistics: show_statistics(y_test, y_pred, "Custom Random Forest Classifier")
