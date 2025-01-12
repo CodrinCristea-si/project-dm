@@ -14,12 +14,12 @@ import time
 from sklearn.utils import shuffle
 import pandas as pd
 from imblearn.over_sampling import ADASYN, SMOTE
+from tensorflow.python.ops.linalg.linalg_impl import sqrtm
 from xgboost import XGBClassifier
 from sklearn.ensemble import VotingClassifier
 
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.utils import to_categorical
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
@@ -41,6 +41,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.metrics import confusion_matrix
 from sklearn import preprocessing
 from imblearn.under_sampling import EditedNearestNeighbours, NearMiss, RandomUnderSampler, AllKNN
+from random_forest import RandomForest
 
 def create_labels_key(labels):
     labels_key = {}
@@ -142,6 +143,13 @@ def apply_RandomForestClassifier(X_train, y_train, X_test):
     y_pred = random_forest_model.predict(X_test)
     return y_pred
 
+def apply_customRandomForestClassifier(X_train, y_train, X_test):
+    # using 50 trees without a limitation for the max depth; random state as for the other classifiers
+    random_forest_model = RandomForest(num_trees=50, random_state=42)
+    random_forest_model.fit(X_train, y_train)
+    y_pred = random_forest_model.predict(X_test)
+    return y_pred
+
 # oversampling algorithms 
 
 def apply_ADASYN(X, y):
@@ -153,25 +161,29 @@ def apply_ADASYN(X, y):
 
 def apply_clasification(X_train, X_test, y_train, y_test, labels, with_statistics = True, with_confusion_matrix = True):
 
-    y_pred = apply_GaussianNB(X_train, y_train, X_test)
-    if with_statistics: show_statistics(y_test, y_pred, "Naive Bayes Classifier")
-    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Naive Bayes Classifier", labels)
+    # y_pred = apply_GaussianNB(X_train, y_train, X_test)
+    # if with_statistics: show_statistics(y_test, y_pred, "Naive Bayes Classifier")
+    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Naive Bayes Classifier", labels)
+    #
+    # y_pred = apply_MLPClassifier(X_train, y_train, X_test)
+    # if with_statistics: show_statistics(y_test, y_pred, "MLP Classifier")
+    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "MLP Classifier", labels)
+    #
+    # y_pred = apply_KNeighborsClassifier(X_train, y_train, X_test)
+    # if with_statistics: show_statistics(y_test, y_pred, "KNeighbors Classifier")
+    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "KNeighbors Classifier", labels)
+    #
+    # y_pred = apply_XGBClassifier(X_train, y_train, X_test)
+    # if with_statistics: show_statistics(y_test, y_pred, "XGBoost Classifier")
+    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "XGBoost Classifier", labels)
+    #
+    # y_pred = apply_RandomForestClassifier(X_train, y_train, X_test)
+    # if with_statistics: show_statistics(y_test, y_pred, "Random Forest Classifier")
+    # if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Random Forest Classifier", labels)
 
-    y_pred = apply_MLPClassifier(X_train, y_train, X_test)
-    if with_statistics: show_statistics(y_test, y_pred, "MLP Classifier")
-    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "MLP Classifier", labels)
-
-    y_pred = apply_KNeighborsClassifier(X_train, y_train, X_test)
-    if with_statistics: show_statistics(y_test, y_pred, "KNeighbors Classifier")
-    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "KNeighbors Classifier", labels)
-
-    y_pred = apply_XGBClassifier(X_train, y_train, X_test)
-    if with_statistics: show_statistics(y_test, y_pred, "XGBoost Classifier")
-    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "XGBoost Classifier", labels)
-
-    y_pred = apply_RandomForestClassifier(X_train, y_train, X_test)
-    if with_statistics: show_statistics(y_test, y_pred, "Random Forest Classifier")
-    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Random Forest Classifier", labels)
+    y_pred = apply_customRandomForestClassifier(X_train, y_train, X_test)
+    if with_statistics: show_statistics(y_test, y_pred, "Custom Random Forest Classifier")
+    if with_confusion_matrix: show_confusion_matrix(y_test, y_pred, "Custom Random Forest Classifier", labels)
 
 
 def clasification_by_class():
@@ -320,6 +332,7 @@ def clasification_by_category_with_oversampling_with_all_data():
     X_train, X_test = apply_scaler(X_train, X_test)
 
     apply_clasification(X_train, X_test, y_train, y_test, labels_key, True, True)
+
 
 if __name__ == "__main__":
     # clasification_by_class()

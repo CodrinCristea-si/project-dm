@@ -1,0 +1,33 @@
+----------------------------------------------------
+Naive Bayes Classifier Accuracy training on : 0.5850
+Naive Bayes Classifier Precision training on : 0.5615
+Naive Bayes Classifier Recall training on : 0.5850
+Naive Bayes Classifier F1-Score training on : 0.5586
+----------------------------------------------------
+MLP Classifier Accuracy training on : 0.8369
+MLP Classifier Precision training on : 0.8400
+MLP Classifier Recall training on : 0.8369
+MLP Classifier F1-Score training on : 0.8374
+----------------------------------------------------
+KNeighbors Classifier Accuracy training on : 0.9095
+KNeighbors Classifier Precision training on : 0.9101
+KNeighbors Classifier Recall training on : 0.9095
+KNeighbors Classifier F1-Score training on : 0.9096
+----------------------------------------------------
+XGBoost Classifier Accuracy training on : 0.9467
+XGBoost Classifier Precision training on : 0.9467
+XGBoost Classifier Recall training on : 0.9467
+XGBoost Classifier F1-Score training on : 0.9467
+----------------------------------------------------
+Random Forest Classifier Accuracy training on : 0.9448
+Random Forest Classifier Precision training on : 0.9448
+Random Forest Classifier Recall training on : 0.9448
+Random Forest Classifier F1-Score training on : 0.9448
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.9251
+Custom Random Forest Classifier Precision training on : 0.9255
+Custom Random Forest Classifier Recall training on : 0.9251
+Custom Random Forest Classifier F1-Score training on : 0.9251
+
+the custom random forest classifier used 5 decision trees and sqrt for deciding the max_features
+no limit on the number of nodes
