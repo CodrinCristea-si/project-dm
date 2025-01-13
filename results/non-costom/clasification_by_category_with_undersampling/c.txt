@@ -1,0 +1,109 @@
+Classification by Category with undersampling
+
+For EditedNearestNeighbours
+----------------------------------------------------
+Naive Bayes Classifier Accuracy training on : 0.7077
+Naive Bayes Classifier Precision training on : 0.7430
+Naive Bayes Classifier Recall training on : 0.7077
+Naive Bayes Classifier F1-Score training on : 0.6756
+----------------------------------------------------
+MLP Classifier Accuracy training on : 0.7509
+MLP Classifier Precision training on : 0.8076
+MLP Classifier Recall training on : 0.7509
+MLP Classifier F1-Score training on : 0.7329
+----------------------------------------------------
+KNeighbors Classifier Accuracy training on : 0.7816
+KNeighbors Classifier Precision training on : 0.8173
+KNeighbors Classifier Recall training on : 0.7816
+KNeighbors Classifier F1-Score training on : 0.7746
+----------------------------------------------------
+XGBoost Classifier Accuracy training on : 0.8105
+XGBoost Classifier Precision training on : 0.8586
+XGBoost Classifier Recall training on : 0.8105
+XGBoost Classifier F1-Score training on : 0.8059
+----------------------------------------------------
+Random Forest Classifier Accuracy training on : 0.8042
+Random Forest Classifier Precision training on : 0.8576
+Random Forest Classifier Recall training on : 0.8042
+Random Forest Classifier F1-Score training on : 0.7985
+
+For NearMiss
+----------------------------------------------------
+Naive Bayes Classifier Accuracy training on : 0.7026
+Naive Bayes Classifier Precision training on : 0.7079
+Naive Bayes Classifier Recall training on : 0.7026
+Naive Bayes Classifier F1-Score training on : 0.6802
+----------------------------------------------------
+MLP Classifier Accuracy training on : 0.7499
+MLP Classifier Precision training on : 0.7475
+MLP Classifier Recall training on : 0.7499
+MLP Classifier F1-Score training on : 0.7486
+----------------------------------------------------
+KNeighbors Classifier Accuracy training on : 0.7467
+KNeighbors Classifier Precision training on : 0.7421
+KNeighbors Classifier Recall training on : 0.7467
+KNeighbors Classifier F1-Score training on : 0.7438
+----------------------------------------------------
+XGBoost Classifier Accuracy training on : 0.7920
+XGBoost Classifier Precision training on : 0.7961
+XGBoost Classifier Recall training on : 0.7920
+XGBoost Classifier F1-Score training on : 0.7923
+----------------------------------------------------
+Random Forest Classifier Accuracy training on : 0.7811
+Random Forest Classifier Precision training on : 0.7875
+Random Forest Classifier Recall training on : 0.7811
+Random Forest Classifier F1-Score training on : 0.7816
+
+For RandomUnderSampler
+----------------------------------------------------
+Naive Bayes Classifier Accuracy training on : 0.7026
+Naive Bayes Classifier Precision training on : 0.7079
+Naive Bayes Classifier Recall training on : 0.7026
+Naive Bayes Classifier F1-Score training on : 0.6802
+----------------------------------------------------
+MLP Classifier Accuracy training on : 0.7510
+MLP Classifier Precision training on : 0.7521
+MLP Classifier Recall training on : 0.7510
+MLP Classifier F1-Score training on : 0.7501
+----------------------------------------------------
+KNeighbors Classifier Accuracy training on : 0.7467
+KNeighbors Classifier Precision training on : 0.7421
+KNeighbors Classifier Recall training on : 0.7467
+KNeighbors Classifier F1-Score training on : 0.7438
+----------------------------------------------------
+XGBoost Classifier Accuracy training on : 0.7916
+XGBoost Classifier Precision training on : 0.7960
+XGBoost Classifier Recall training on : 0.7916
+XGBoost Classifier F1-Score training on : 0.7919
+----------------------------------------------------
+Random Forest Classifier Accuracy training on : 0.7813
+Random Forest Classifier Precision training on : 0.7882
+Random Forest Classifier Recall training on : 0.7813
+Random Forest Classifier F1-Score training on : 0.7819
+
+For AllKNN
+----------------------------------------------------
+Naive Bayes Classifier Accuracy training on : 0.7003
+Naive Bayes Classifier Precision training on : 0.7046
+Naive Bayes Classifier Recall training on : 0.7003
+Naive Bayes Classifier F1-Score training on : 0.6788
+----------------------------------------------------
+MLP Classifier Accuracy training on : 0.7443
+MLP Classifier Precision training on : 0.7431
+MLP Classifier Recall training on : 0.7443
+MLP Classifier F1-Score training on : 0.7436
+----------------------------------------------------
+KNeighbors Classifier Accuracy training on : 0.7464
+KNeighbors Classifier Precision training on : 0.7419
+KNeighbors Classifier Recall training on : 0.7464
+KNeighbors Classifier F1-Score training on : 0.7434
+----------------------------------------------------
+XGBoost Classifier Accuracy training on : 0.7911
+XGBoost Classifier Precision training on : 0.7965
+XGBoost Classifier Recall training on : 0.7911
+XGBoost Classifier F1-Score training on : 0.7912
+----------------------------------------------------
+Random Forest Classifier Accuracy training on : 0.7810
+Random Forest Classifier Precision training on : 0.7887
+Random Forest Classifier Recall training on : 0.7810
+Random Forest Classifier F1-Score training on : 0.7814
