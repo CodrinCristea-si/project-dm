@@ -1,0 +1,6 @@
+Classification by Category
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.8578
+Custom Random Forest Classifier Precision training on : 0.8584
+Custom Random Forest Classifier Recall training on : 0.8578
+Custom Random Forest Classifier F1-Score training on : 0.8578
