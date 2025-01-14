@@ -1,0 +1,30 @@
+Classification by Category with undersampling
+For NearMiss
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.8439
+Custom Random Forest Classifier Precision training on : 0.8456
+Custom Random Forest Classifier Recall training on : 0.8439
+Custom Random Forest Classifier F1-Score training on : 0.8444
+
+For RandomUnderSampler
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.8437
+Custom Random Forest Classifier Precision training on : 0.8447
+Custom Random Forest Classifier Recall training on : 0.8437
+Custom Random Forest Classifier F1-Score training on : 0.8437
+
+For EditedNearestNeighbours
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.8025
+Custom Random Forest Classifier Precision training on : 0.8425
+Custom Random Forest Classifier Recall training on : 0.8025
+Custom Random Forest Classifier F1-Score training on : 0.7977
+
+For AllKNN
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.8378
+Custom Random Forest Classifier Precision training on : 0.8418
+Custom Random Forest Classifier Recall training on : 0.8378
+Custom Random Forest Classifier F1-Score training on : 0.8375
+
+5 trees

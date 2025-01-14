@@ -1,0 +1,26 @@
+Classification by Class
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.9997
+Custom Random Forest Classifier Precision training on : 0.9997
+Custom Random Forest Classifier Recall training on : 0.9997
+Custom Random Forest Classifier F1-Score training on : 0.9997
+
+5 tree
+
+Classification by Class
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.9999
+Custom Random Forest Classifier Precision training on : 0.9999
+Custom Random Forest Classifier Recall training on : 0.9999
+Custom Random Forest Classifier F1-Score training on : 0.9999
+
+10 tree
+
+Classification by Class
+----------------------------------------------------
+Custom Random Forest Classifier Accuracy training on : 0.9999
+Custom Random Forest Classifier Precision training on : 0.9999
+Custom Random Forest Classifier Recall training on : 0.9999
+Custom Random Forest Classifier F1-Score training on : 0.9999
+
+50 tree
